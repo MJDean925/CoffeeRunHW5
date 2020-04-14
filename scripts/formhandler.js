@@ -39,7 +39,7 @@
       if (fn(emailAddress)) {
         event.target.setCustomValidity('');
       } else {
-        message = emailAddress + ' is not an authorized email address!'
+        message = emailAddress + ' is not an authorized email address! Needs to be @bignerdranch.com!'
         event.target.setCustomValidity(message);
       }
     });
