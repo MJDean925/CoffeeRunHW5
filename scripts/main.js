@@ -24,5 +24,7 @@
     checkList.addRow.call(checkList, data);
   });
 
+  checkList.initPending();
+
   formHandler.addInputHandler(Validation.isCompanyEmail);
 })(window);

@@ -65,6 +65,15 @@
     this.$element = $div;
   }
 
+  CheckList.prototype.initPending = function() {
+    var db = firebase.firestore();
+    db.collection('coffeeorders').get()
+        .then((querySnapshot) => { querySnapshot.docs
+            .forEach(doc => { 
+              this.addRow(doc.data());
+            });});
+  }
+
   App.CheckList = CheckList;
   window.App = App;
 })(window);
