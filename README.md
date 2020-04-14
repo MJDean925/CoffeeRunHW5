@@ -6,3 +6,5 @@ Create a new firebase project, go to project settings and add a new web app, rep
 In the firestore of the new project create a new collection called "coffeeorders".
 
 All the data will be added as documents to the collection with fields containing the stored data.
+
+All the data changes can still be viewed without creating the database in a personal project due to the website initializing the checklist with all pending orders when the page is loaded.
